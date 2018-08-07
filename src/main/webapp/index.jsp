@@ -1,23 +1,70 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Sek
-  Date: 31.07.2018
-  Time: 16:08
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Main</title>
+        <title>Главная</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <ul class="menu">
-            <li><a href="Main">Main</a></li>
-            <li><a href="Catalog">Catalog</a></li>
-            <li><a href="Product">Product</a></li>
-            <li><a href="Cart">Cart</a></li>
-            <li><a href="Order">Order</a></li>
-        </ul>
-        <h1>Main</h1>
+        <header>
+            <div class="header">
+                <div class="header_inside">
+                    <div class="logo">
+                        <img src="pictures/logotype.png"
+                             width="40"
+                             height="40"
+                             alt="logo"
+                             id="picturelogo">
+                        SportivnoePitanie
+                    </div>
+
+                    <div class="block">
+                        <a class="menu" href="main">ГЛАВНАЯ</a>
+                        <a class="menu" href="catalog">КАТАЛОГ</a>
+                        <a class="menu" href="contacts">КОНТАКТЫ</a>
+                        <a class="menu" href="cart">КОРЗИНА</a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="welcome">
+                    <h1>Добро пожаловать в наш интернет магазин спортивного питания!</h1>
+                    <p>
+                        Мы предлагаем широкий выбор продуктов спортивного питания, прошедших государственную регистрацию и включающих такие категории как: протеин, гейнеры, бцаа, аминокислоты, креатин, жиросжигатели, хондропротекторы, витамины и минералы, жирные кислоты и др. от ведущих мировых производителей.
+                    </p>
+                    <p>
+                        Наша цель – предложить качественное спортивное питание по наиболее выгодной цене. Мы работаем только с проверенными поставщиками и брендами спортивного питания. Мы тщательно формируем ассортимент под нужды потребителя и следим за новинками и тенденциями индустрии.
+                    </p>
+                    <p>
+                        Все продукты в нашем интернет-магазине, прошли полноценную экспертизу международных и отечественных антидопинговых центров и не содержат в своем составе какие-либо запрещенные компоненты, таких, например, как тестостерон, гормон роста или другие анаболические стероиды.
+                    </p>
+                    <p>
+                        Благодаря профессионализму и опыту наших сотрудников, Вы всегда можете получить квалифицированную консультацию при подборе программы питания и спортивных добавок, максимально подходящих Вам с учетом индивидуальных особенностей и поставленных целей. Мы ценим Ваш выбор и настроены на долгосрочное доверительное сотрудничество. Мы всегда открыты к диалогу и рады Вашим предложениям.
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer_inside">
+                    <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+                    <div class="footer_inside_full">
+                        <div class="footer_inside_1">
+                            <p>117105, Москва, Варшавское шоссе, дом 9, строение 1, подъезд 4</p>
+                        </div>
+                        <div class="footer_inside_2">
+                            <p>price-team.ru</p>
+                            <p>8-999-555-33-66</p>
+                        </div>
+                    </div>
+                    <div class="footer_inside_3">&copy; Все права защищены.</div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
