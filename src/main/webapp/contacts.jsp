@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Каталог</title>
+        <title>Контакты</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -27,19 +27,36 @@
                 </div>
             </div>
         </header>
+
         <main>
             <div class="container">
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
-                <jsp:include page="product.jsp" />
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li>Контакты</li>
+                </ul>
+                <h1>Напишите нам</h1>
+                <form class="form_contact">
+                    <p>Введите Ваше имя:<br>
+                        <input type="text" size="30" placeholder="Ваше имя"></p>
+                    <p>Введите Ваш телефон:<br>
+                        <input type="tel" size="30" placeholder="Ваш телефон"></p>
+                    <p>Введите Ваш Email:<br>
+                        <input type="Email" size="30" placeholder="Ваш Email"></p>
+                    <p>Введите тему Вашего обращения:<br>
+                        <input type="text" size="50" placeholder="Тема Вашего обращения"></p>
+                    <textarea cols="30" placeholder="Введите текст Вашего обращения"></textarea>
+                    <p><input class="button" type="button" value="Отправить"></p>
+                </form>
+                <h2>Адрес</h2>
+                <ul class="ul_contact">
+                    <li>Контактный номер телефона: 8-999-555-33-66</li>
+                    <li>Адрес: 117105, Москва, Варшавское шоссе, дом 9, строение 1, подъезд 4</li>
+                    <li>Email: price-team.ru</li>
+                </ul>
             </div>
         </main>
+
+
         <footer>
             <div class="footer">
                 <div class="footer_inside">
@@ -57,7 +74,5 @@
                 </div>
             </div>
         </footer>
-
-
     </body>
 </html>
